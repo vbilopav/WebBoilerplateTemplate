@@ -13,6 +13,7 @@ Ultimate Single Page Application project template For ASP.NET MVC based on Burke
 - KendoUI library for client routing, view binding, template processing and cool fx
 - pub-sub event mechanism
 - CDN with local fallbacks
+- Font Awesome for awesome icons
 
 ##### Improvements:
 
