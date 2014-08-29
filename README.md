@@ -8,19 +8,19 @@ Ultimate Single Page Application project template For ASP.NET MVC based on Burke
 ###### Features:
 
 - ASP.NET MVC 5.1
-- RequireJS module loader for truly modular JavaScript development and html chunking
-- RequireJS optimizer for optimized truly single file release.
-- KendoUI library for client routing, view binding, template processing and cool fx
-- pub-sub event mechanism
-- CDN with local fallbacks
-- Font Awesome for awesome icons
+- RequireJS module loader for truly modular JavaScript development and html chunking.
+- Built-in RequireJS optimizer for optimized and truly single file releases.
+- KendoUI library for client routing, view binding, template processing and cool fx.
+- pub-sub event mechanism.
+- CDN with local fallbacks.
+- Font Awesome for awesome icons.
 
 ###### Improvements:
 
 - RequireJS Optimizer configured and built in project (Build Events). Requires node.js to be installed.
 - Optimized single js build file is cached on server and injected into Index file.
 - Release configuration uses CDN with local fallback for jQuery, Bootstrap and RequireJS
-- pubsub and debug libs switched to RequireJS via config for consistencyž
+- pubsub and debug libs switched to RequireJS via config for consistency.
 - Added 16 free Bootstrap themes from http://bootswatch.com/
 - Upgrade to MVC5.1
 - Fixed some broken file references
