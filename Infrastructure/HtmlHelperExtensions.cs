@@ -22,6 +22,7 @@ namespace Web.Infrastructure
 
         private const string MainJsBuildCacheKey = "_mainJsBuildKey";
         private const string MainJsBuildConfigKey = "MainJsBuildFilePath";
+        private const string ScriptsVersionConfigKey = "ScriptsVersion";
 
         public static IHtmlString MainJavaScriptBuildContent(this HtmlHelper htmlHelper, string filePath = "~/App/build/main.js")
         {
@@ -36,6 +37,12 @@ namespace Web.Infrastructure
             fileContents = File.ReadAllText(filePath, new UTF8Encoding()).Replace("</script>", "</scr'+'ipt>");
             cache.Set(MainJsBuildCacheKey, fileContents, policy);
             return htmlHelper.Raw(fileContents);
+        }
+
+        public static string GetScriptsVersion(this HtmlHelper htmlHelper)
+        {
+            var scriptsVersion = ConfigurationManager.AppSettings[ScriptsVersionConfigKey];
+            return scriptsVersion ?? "";
         }
     }
 }
