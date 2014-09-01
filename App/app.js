@@ -1,13 +1,13 @@
 ﻿define([
-    'views/layout/layout'
-], function (layout) {
+    'layout/layout'
+], function (l) {
 
     // the application router
     var router = new kendo.Router({
         init: function () {
 
             // render the layout first            
-            layout.render("#applicationHost");            
+            l.layout.render("#applicationHost");            
         },
 
         routeMissing: function (e) {        
@@ -18,7 +18,7 @@
             path = path === '/' ? '/home' : path;
 
             // require it in
-            require(['views' + path + path], function (view) { layout.showIn('#content', view); });           
+            require(['views' + path + path], function (view) { l.layout.showIn('#content', view); });           
         },
         
         change: function (e) {            

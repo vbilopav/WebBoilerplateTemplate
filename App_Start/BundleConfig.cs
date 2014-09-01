@@ -22,6 +22,7 @@ namespace Web
                 .Include("~/Content/bootstrap-theme.css")
                 //.Include("~/Content/themes/bootstrap-flatly.min.css")
                 .Include("~/Content/font-awesome.css")
+                .Include("~/Content/application.css")
               );
         }
 

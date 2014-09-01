@@ -137,9 +137,12 @@
     <Content Include="App\build\main.js" />
     <Content Include="App\config.js" />
     <Content Include="App\main.js" />
+    <Content Include="App\user\navItemTempl.html" />
+    <Content Include="App\user\navItem.js" />
     <Content Include="App\views\details\details.html" />
     <Content Include="App\views\details\details.js" />
     <Content Include="App\views\home\home.js" />
+    <Content Include="Content\application.css" />
     <Content Include="Content\themes\bootstrap-cerulean.css" />
     <Content Include="Content\themes\bootstrap-cerulean.min.css" />
     <Content Include="Content\themes\bootstrap-cosmo.css" />
@@ -179,8 +182,8 @@
     <Content Include="Scripts\text.2.0.7.min.js" />
     <Content Include="App\vendor\kendo.js" />
     <Content Include="App\views\home\home.html" />
-    <Content Include="App\views\layout\layout.html" />
-    <Content Include="App\views\layout\layout.js" />
+    <Content Include="App\layout\layout.html" />
+    <Content Include="App\layout\layout.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -873,7 +876,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
