@@ -1,14 +1,14 @@
 ﻿define([
     'text!layout/layout.html',
-     'user/navItem'
-], function (template, usrNavTempl) {
+    'layout/nocollapse'
+], function (template, nocollapse) {
 
     var nav = null,
         navbrand = null,
         navtoggle = null,
         navcollapse = null,
-        usrNav = null,
-        usrNavCollapse = null,
+        navsmall = null,
+        navnocollapse = null,
         toggleVisible = null;
 
 
@@ -24,14 +24,15 @@
         }
     };
 
-    //occurs when toggle button is shown or hidden
     var onNavToggleShow = function (shown) {
         if (shown) {
-            usrNav.css('display', 'block');
-            usrNavCollapse.css('display', 'none');
+            $('input', navsmall).val($('input', navnocollapse).val());
+            navsmall.css('display', 'block');
+            navnocollapse.css('display', 'none');
         } else {
-            usrNav.css('display', 'none');
-            usrNavCollapse.css('display', 'block');
+            $('input', navnocollapse).val($('input', navsmall).val());
+            navsmall.css('display', 'none');
+            navnocollapse.css('display', 'block');
         }
     };
 
@@ -48,7 +49,7 @@
 
     // these links populate the navbar
     var viewModel = kendo.observable({
-        home: 'Home',
+        home: 'Kendo UI By Telerik',
         navclick: onClickNavigation,
         links: [{ title: 'Home', href: '#/', icon: 'home', icon: 'fa fa-home' },
                 { title: 'Details', href: '#/details', icon: 'fa fa-ellipsis-h' },
@@ -90,8 +91,8 @@
             navtoggle = $('.navbar-header .navbar-toggle');
             navcollapse = $('#navbar-collapse');
             toggleVisible = navtoggle.is(':visible');
-            usrNav = $('ul#usr-nav').html(usrNavTempl.html);
-            usrNavCollapse = $('ul#usr-nav-collapse').html(usrNavTempl.html);
+            navsmall = $('ul#nav-small').html(nocollapse.html);
+            navnocollapse = $('ul#nav-nocollapse').html(nocollapse.html);
             onNavToggleShow(toggleVisible);
         }
     });

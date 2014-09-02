@@ -1,5 +1,5 @@
 ﻿define([
-    'text!user/navItemTempl.html'
+    'text!layout/nocollapse.html'
 ], function (t) {
 
     var template = kendo.template(t);

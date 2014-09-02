@@ -4,3 +4,28 @@
 body {
   padding-top: 60px;
 }
+.lb-color {
+    color: #FFE113;
+}
+a#nav-search {
+    vertical-align: middle; 
+    display: table-cell;
+}
+input#nav-search {
+    height: 22px;
+    display: inline-block;
+    width: 120px;
+}
+@media (max-width: 422px) {
+    input#nav-search {
+        width: 90px;
+    }
+}
+@media (min-width: 423px) {
+    input#nav-search {
+        width: 160px;
+    }
+}    
+#nav-small li {
+   float:left; 
+}
