@@ -137,8 +137,6 @@
     <Content Include="App\build\main.js" />
     <Content Include="App\config.js" />
     <Content Include="App\main.js" />
-    <Content Include="App\layout\nocollapse.html" />
-    <Content Include="App\layout\nocollapse.js" />
     <Content Include="App\views\details\details.html" />
     <Content Include="App\views\details\details.js" />
     <Content Include="App\views\home\home.js" />
@@ -876,7 +874,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\user\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

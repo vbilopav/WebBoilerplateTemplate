@@ -4,28 +4,44 @@
 body {
   padding-top: 60px;
 }
-.lb-color {
-    color: #FFE113;
+
+#navbar-header {
+    width: 100%;
 }
-a#nav-search {
-    vertical-align: middle; 
-    display: table-cell;
+@media (max-width: 768px) {
+    ul#nav-sticky {
+        padding-right: 15px;
+    }
 }
-input#nav-search {
-    height: 22px;
+ul#nav-sticky input {
+    height: 24px;
+    width: 130px;
     display: inline-block;
-    width: 120px;
 }
-@media (max-width: 422px) {
-    input#nav-search {
-        width: 90px;
-    }
-}
-@media (min-width: 423px) {
-    input#nav-search {
-        width: 160px;
-    }
-}    
-#nav-small li {
+ul#nav-sticky li {
    float:left; 
 }
+.k-ie #nav-search span {
+    position: relative;
+    top: -5px;
+}
+.k-ie ul#nav-sticky input {
+    color: #000000;
+    padding: 2px;
+}
+@media (max-width: 993px) and (min-width: 767px) {
+    .k-webkit #nav-search input {
+        width: 100px;
+    }
+}  
+@media (max-width: 404px) {
+    ul#nav-sticky input {
+        width: 80px;
+    }
+}  
+@media (max-width: 358px) {
+    ul#nav-sticky input {
+        width: 60px;
+    }
+} 
+    
